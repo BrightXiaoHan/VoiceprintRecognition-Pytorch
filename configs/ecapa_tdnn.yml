@@ -1,9 +1,10 @@
 # 数据集参数
 dataset_conf:
   # 训练的批量大小
-  batch_size: 64
+  batch_size: 256
   # 说话人数量，即分类大小
-  num_speakers: 3242
+  # num_speakers: 3242
+  num_speakers: 4226
   # 读取数据的线程数量
   num_workers: 4
   # 过滤最短的音频长度
@@ -51,7 +52,7 @@ model_conf:
 
 train_conf:
   # 训练的轮数
-  max_epoch: 30
+  max_epoch: 50
   log_interval: 100
 
 # 所使用的模型
